@@ -194,11 +194,6 @@
 
 2) Ahora damos le siguiente comando para subir todo a nuestro Repositorio Remoto.
    ````
-   git pull origin main
-   ```` 
-   Listo.
-   Si nos falla puede que nos tire un comando para copiar parecido a este
-   ````
    git push --set-upstream origin [elNombreDeLaRamaODeLoQueHAgamos]
    ````
 3) Podremos ver en GitHub, en nuestro Repo, el Main. Para ver la rama que subimos tenemos que cambiar de Main, 
