@@ -94,6 +94,9 @@
   ````
   Una vez copiado, volvemos a nuestra terminal, que tenemos levantada en Visual Studio CODE y dentro de nuestra carpeta de trabajo.
   y la pegamos en la terminal, y damos enter.
+#
+#
+  
  
 
 # Otro modo de verlo Más Completo
