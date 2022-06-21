@@ -3,7 +3,7 @@
 # Definicion de SCRUM  
 
 Scrum(n): Es un marco de trabajo a traves del cual las personas pueden abordar  problemas complejos 
-adaptativos,a la vez que se entregan productos de forma eficiente  y creativa con el mismo valir .
+adaptativos,a la vez que se entregan productos de forma eficiente  y creativa con el mismo valor .
 
 #Scrum
 
