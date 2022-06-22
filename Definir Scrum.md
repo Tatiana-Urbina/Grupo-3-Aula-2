@@ -19,6 +19,25 @@ metodología o proceso, es un Marco de Trabajo .
 ●Su visión es opuesta a la propuesta por la metodología en
 cascada.
 
+
+# Modelo de Cascada en el desarrollo de Software
+
+Es un enfoque metodológico que ordena rigurosamente las etapas del proceso para el desarrollo de software, de tal forma que el inicio de cada etapa debe esperar a la finalización de la etapa anterior. También es llamado como Modelo Lineal y Secuencial.
+
+Las etapas del Modelo de Cascada son las siguientes.
+
+1- Definición de Requerimientos.
+
+2- Diseño de Software.
+
+3- Implementacion y prueba de unidades.
+
+4- Integración y Prueba del sistema.
+
+5- Operación y mantenimiento.
+
+
+
 # Curva de Fallo 
 
 ## Del Hardware
