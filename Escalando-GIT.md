@@ -87,8 +87,9 @@
   Asi recuperamos el archivo o la carpeta completa.
 
 # Como desplegar desde nuestro Repo Local a Repo Remoto(GitHub)
-1-Luego de tener creado nuestra cuenta en GitHub, y crear el nuevo repositorio en GitHub, nos ubimos en la solapa de GitHub "<code>". 
+1-Luego de tener creado nuestra cuenta en GitHub, y crear el nuevo repositorio en GitHub, nos ubimos en la solapa de GitHub "code". 
   Tendremos que copiar el comando que estará abajo, y que se parecerá al siguiente:
+  
   ````
   git remote add origin https://github.com/Usuario/RepoRemoto.git
   ````
