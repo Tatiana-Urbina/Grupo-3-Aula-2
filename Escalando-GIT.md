@@ -193,9 +193,14 @@
    ```` 
    Podremos ver si hubo algun cambio o no.
 
-2) Ahora damos le siguiente comando para subir todo a nuestro Repositorio Remoto.
+2) Ahora damos le siguiente comando para subir todo lo que trabajamos en nuestra rama, a nuestro Repositorio Remoto, por Primera Vez,(incorporamos nuestra
+   rama(branch)al repo).
    ````
    git push --set-upstream origin [elNombreDeLaRamaODeLoQueHAgamos]
+   ````
+   Opcional: Si no es nuestra Primera Vez, porque en nuestro repositorio Remoto ya se encuentra actualizada nuestra rama(branch), podemos usar el comando simple:
+   ````
+   git push
    ````
 3) Podremos ver en GitHub, en nuestro Repo, el Main. Para ver la rama que subimos tenemos que cambiar de Main, 
    haciendole CLick, veremos en el desplegable [elNombreDeLaRamaODeLoQueHAgamos]
