@@ -57,4 +57,17 @@ Durante su vida, el software sufre cambios (mantenimiento). Conforme se hacen lo
 
 ![image](https://user-images.githubusercontent.com/104374695/175052525-3cc29bdf-d3e5-4ce7-b904-ae48d5c8e6af.png)
 
+# Definición de Software
+
+El software son los programas, los documentos asociados y la configuración de datos que se necesitan para hacer que estos programas operen de manera correcta. Es decir, comprende el conjunto de los componentes lógicos necesarios que hace posible la realización de tareas específicas, en contraposición a los componentes físicos que son llamados hardware.
+
+# LAS CARACTERÍSTICAS DEL SOFTWARE SON 7
+
+•	Es intangible.
+•	Tiene alto contenido Intelectual.
+•	Su proceso de desarrollo es humano intensivo, basado en equipos y construidos en proyectos.
+•	Puede ser potencialmente modificado, en forma permanente. (Robert Cochram).
+•	El software no se manufactura, se desarrolla.
+•	El software no se desgasta.
+•	A pesar de la tendencia de la industria a desarrollar por componentes, gran parte del software aún se construye a medida. (Pressman).
 
