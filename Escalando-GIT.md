@@ -225,7 +225,47 @@
    y asi poder seguir trabando en ella. 
 
  
+# Como Ver las Branch que tenemos en git
 
+1) Dentro de nuestra carpeta abrimos la GIT BASH.
+
+2) Con el siguiente comando podemos ver las ramas o la main:
+  ````
+   git branch
+   ````
+
+# Como Renombrar la Branch en git
+
+1) Utilizaremos el siguiente comando en la GIT BASH
+   ````
+   git branch -m [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   ````
+   Alternativa:
+   ````
+   git branch --move [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   ````
+
+ # Como Eliminar una Branch en git
+ 
+ 1) Antes de eliminar la rama, tienes que estar fuera de ella, sino git no te permitirá hacerlo. Recuerda que con git checkout
+ 
+ 2) Utilizaremos el siguiente comando:
+    ````
+    git branch -d [NOMBRE DE LA RAMA A ELIMINAR] 
+    ````
+    Alternativa:
+    ````
+    git branch --delete [NOMBRE DE LA RAMA A ELIMINAR] 
+    ````
+
+# Mas ayuda para las Branch en git
+
+1) Utilizaremos el siguiente comando:
+   ````
+    git help brach
+    ```` 
+  
+   
    
 
 
