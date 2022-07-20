@@ -36,6 +36,12 @@
   ````
 #
 
+# Como Ver la Configuracion Global de GIT, en GIT bash
+1-Utilizaremos el siguiente comando:
+  ````
+  git config --list
+  ````
+
 # Creamos una Nueva Carpeta
 1-Nombramos la carpeta.
 
