@@ -109,6 +109,27 @@ Opcional:
   git checkout -- .
   ````
   Asi recuperamos el archivo o la carpeta completa.
+  
+# ¿Dònde guardar Git la informacion de cada cambio que hacemos?
+1-Una vez inicializado nuestro repo en la Carpeta que hayamos creado(ej.MiWeb), Git crea dentro de Miweb, una Carpeta Oculto. Para abrirla y ver como 
+  funciona Git, podemos abrir la Git BASH, dentro de MiWeb.
+  Con el comando: 
+  ```
+  ls -l
+  ````
+  podremos listar los archivos que tenga nuestra Carpeta Creada, la cual no tendra nada, en un principio, pero entonce Donde esta la Carpeta Oculta?,
+  Utiliza el siguiente comando:
+  ```
+  ls -a
+  ````
+  Podràs ver en el resultado la Carpeta Oculta con el nombre: .git
+  Para poder entrar a ella,
+  utiliza el siguiente comando
+  ```
+  cd .git/
+  ````
+  Ya estaras dentro de la Carpeta Oculta de Git, allì podrà ver varias cosas interesante.
+
 
 # Como desplegar desde nuestro Repo Local a Repo Remoto(GitHub)
 1-Luego de tener creado nuestra cuenta en GitHub, y crear el nuevo repositorio en GitHub, nos ubimos en la solapa de GitHub "code". 
