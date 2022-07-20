@@ -213,6 +213,11 @@ Opcional:
    git add [archivosQueHayamosCreado]
    ````
    Este comando copia SOLO  el archivos que queremos guardar.
+   También podemos utilizar el comando:
+   ````
+   git add .css
+   ````
+   Para agregar TODOS los archivos con Extension .css
 
 3) Volvemos a verificar con:
    ````
