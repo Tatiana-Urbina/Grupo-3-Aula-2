@@ -208,11 +208,12 @@ Opcional:
    ````
    git add .
    ````
-   Este comando copia TODOS los archivos que hayamos creado. Tambien podemos utilizar el comando
+   Este comando copia TODOS los archivos que hayamos creado.Es el menos recomendado utilizarr a menos que subamos pocos archivos. 
+   Tambien podemos utilizar el comando
    ````
    git add [archivosQueHayamosCreado]
    ````
-   Este comando copia SOLO  el archivos que queremos guardar.
+   Este comando copia SOLO  el archivos que queremos guardar.Es el más recomendado de utlizar.
    También podemos utilizar el comando:
    ````
    git add .css
