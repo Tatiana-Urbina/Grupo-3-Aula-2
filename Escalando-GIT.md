@@ -34,12 +34,24 @@
   ````
   git config --global color.ui true
   ````
+
+Opcional:
+  -Para que Git trabaje de manera predeterminada con el editor Visual Studio CODE:
+  ````
+  git config --global core.editor "code --wait"
+  ````
+
 #
 
 # Como Ver la Configuracion Global de GIT, en GIT bash
 1-Utilizaremos el siguiente comando:
   ````
   git config --list
+  ````
+  Opcional:
+  Tambien podemos utilizar el siguiente comando, pero que se abrirà en nuestros editores de codigo
+  ````
+  git config --global -e
   ````
 
 # Creamos una Nueva Carpeta
