@@ -218,7 +218,11 @@ Opcional:
    ````
    git add .css
    ````
-   Para agregar TODOS los archivos con Extension .css
+   Para agregar TODOS los archivos con Extension .css.
+   Para agregar Más de un archivo, utilicemos el siguiente comando:
+   ````
+   git add [archivo.txt] [archivo.txt] [archivo.txt] [archivo.txt]
+   ````
 
 3) Volvemos a verificar con:
    ````
