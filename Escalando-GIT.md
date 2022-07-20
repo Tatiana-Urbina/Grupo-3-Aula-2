@@ -53,7 +53,13 @@ Opcional:
   ````
   git config --global -e
   ````
-
+  
+# Ver mas configuraciones de GIT
+1-Utilizaremos el siguiente codigo
+  ````
+  git config -h
+  ````
+  
 # Creamos una Nueva Carpeta
 1-Nombramos la carpeta.
 
