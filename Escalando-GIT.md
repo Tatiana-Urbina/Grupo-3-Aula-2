@@ -18,7 +18,7 @@
   ````
   -Para poder ver los comandos comunes.
   b)Una vez instalado, podemos usar la Bash de GIT, y utlizar los comando antes descriptos. 
-# 
+ 
 
 # Configuracion Global de GIT
 1-Nos identificaremos con los siguientes comandos, desde la terminal CMD o desde la Bash de GIT
@@ -34,10 +34,36 @@
   ````
   git config --global color.ui true
   ````
-#
+
+Opcional:
+  -Para que Git trabaje de manera predeterminada con el editor Visual Studio CODE:
+  ````
+  git config --global core.editor "code --wait"
+  ````
+
+
+# Como Ver la Configuracion Global de GIT, en GIT bash
+1-Utilizaremos el siguiente comando:
+  ````
+  git config --list
+  ````
+  Opcional:
+  Tambien podemos utilizar el siguiente comando, pero que se abrirà en nuestros editores de codigo
+  ````
+  git config --global -e
+  ````
+
+
+# Ver mas configuraciones de GIT
+1-Utilizaremos el siguiente codigo
+  ````
+  git config -h
+  ````
+
 
 # Creamos una Nueva Carpeta
 1-Nombramos la carpeta.
+
 
 # Desde nuestro Editor de Codigo
 1-Abrimos el Editor que tengamos, ej. Visual Studio CODE
@@ -58,7 +84,8 @@
 
 4-Luego de editar, podemos levantar la terminal desde Visual Studio CODE, desde la solapa superior, "Terminal"-> New Terminal.
   Debajo se abre la Terminal, que estará ubicada automaticamente en nuestra carpeta(directorio).
- 
+
+
 # Comandos Basicos
 1-Luego de hacer nuestras ediciones de archivos, para iniciar nuestro Repo Local, usamos el siguiente comando
   ````
@@ -86,6 +113,28 @@
   ````
   Asi recuperamos el archivo o la carpeta completa.
 
+
+# ¿Dònde guardar Git la informacion de cada cambio que hacemos?
+1-Una vez inicializado nuestro repo en la Carpeta que hayamos creado(ej.MiWeb), Git crea dentro de Miweb, una Carpeta Oculto. Para abrirla y ver como 
+  funciona Git, podemos abrir la Git BASH, dentro de MiWeb.
+  Con el comando: 
+  ```
+  ls -l
+  ````
+  podremos listar los archivos que tenga nuestra Carpeta Creada, la cual no tendra nada, en un principio, pero entonce Donde esta la Carpeta Oculta?,
+  Utiliza el siguiente comando:
+  ```
+  ls -a
+  ````
+  Podràs ver en el resultado la Carpeta Oculta con el nombre: .git
+  Para poder entrar a ella,
+  utiliza el siguiente comando
+  ```
+  cd .git/
+  ````
+  Ya estaras dentro de la Carpeta Oculta de Git, allì podrà ver varias cosas interesante.
+
+
 # Como desplegar desde nuestro Repo Local a Repo Remoto(GitHub)
 1-Luego de tener creado nuestra cuenta en GitHub, y crear el nuevo repositorio en GitHub, nos ubimos en la solapa de GitHub "code". 
   Tendremos que copiar el comando que estará abajo, y que se parecerá al siguiente:
@@ -95,13 +144,20 @@
   ````
   Una vez copiado, volvemos a nuestra terminal, que tenemos levantada en Visual Studio CODE y dentro de nuestra carpeta de trabajo.
   y la pegamos en la terminal, y damos enter.
-#
-#
+  
+
+# ¿Còmo ver el historial de COMMITS?
+1)utilizamos el siguiente comando:
+  ````
+  git log
+  ````
+  Opcional: para ver el historial mas corto,(sin nombre de autor o fecha) 
+  podemos utilizar el siguiente comando:
+  ````
+  git log --oneline
+  ````
   
  
-
-# Otro modo de verlo Más Completo
-  
 # Para clonar un repositorio de GitHub
 
 1) En GitHub vamos al repositorio que queremos clonar. Vamos a la solapa COODE(En verde), y copiamos
@@ -132,17 +188,22 @@
    ````
    y damos enter. Listo se creó una nueva rama.
 
-   Pero podemos ver que aún estamos en la MAIN, por lo que tendremos que posicionarnos en la branch recien creada.  
+   Pero podemos ver que aún estamos en la MAIN, por lo que tendremos que posicionarnos en la branch recien
+   creada.  
    Utilizaremos el siguiente comando para posicionarnos en la branch:
    ````
    git checkout [elNombreDeLaRamaODeLoQueHAgamos]
    ````
-   y damos enter. Listo nos ubicamos en la rama.
+   y damos enter. Listo nos ubicamos en la rama. El mismo comando nos permite volver a la Main.
    Podemos ver que cambio de MAIN a [elNombreDeLaRamaODeLoQueHAgamos].
    A trabajar  nuestro editor de codigo o ide!!
    Podemos crear nuevos arhivos para trabajar.
    No cerremos la GIT BASH, la seguiremos usando seguidamente.
-
+   
+   Opcional: Tambièn podemos crear una rama y posicionarnos directamente con el siguiente comando:
+   ````
+   git branch -b [elNombreDeLaRamaODeLoQueHAgamos]
+   ````
 
 
 #  Verificar el estado de nuestros archivo, luego de trabajar en nuestro editor o ide, y mandar nuestro Commit
@@ -156,6 +217,11 @@
    ````
    Podremos ver como estan los archivos que trabajamos.Nos dirá los que hemos modificado.
    Aparecerá probablemente en Rojo.
+   
+   Opcional: Podemos utilizar el comando corto de status:
+   ````
+   git status -s
+   ````
 
 2) Para guardar los cambios que hicimos en GIT, y posteriormente subirlo al Repositorio Remoto(GitHub)
    primero tenemos que mandar los archivos modificados, al STAGING AREA(digamos En proceso...), 
@@ -163,17 +229,32 @@
    ````
    git add .
    ````
-   Este comando copia TODOS los archivos que hayamos creado. Tambien podemos utilizar el comando
+   Este comando copia TODOS los archivos que hayamos creado.Es el menos recomendado utilizarr a menos que subamos pocos archivos. 
+   Tambien podemos utilizar el comando
    ````
    git add [archivosQueHayamosCreado]
    ````
-   Este comando copia SOLO  el archivos que queremos guardar.
+   Este comando copia SOLO  el archivos que queremos guardar.Es el más recomendado de utlizar.
+   También podemos utilizar el comando:
+   ````
+   git add .css
+   ````
+   Para agregar TODOS los archivos con Extension .css.
+   Para agregar Más de un archivo, utilicemos el siguiente comando:
+   ````
+   git add [archivo.txt] [archivo.txt] [archivo.txt] [archivo.txt]
+   ````
 
 3) Volvemos a verificar con:
    ````
    git status
    ````
    Podremos ver que los archivos modificados, estarán en Verde(en la STAGING AREA)
+   
+3)a-Para poder ver los cambios de nuestro archivo, de manera grafica, utilicemos el siguiente comando:
+   ````
+   git diff
+   ````
 
 4) Para culminar, y pasar de la STAGING AREA(En proceso...), utilizamos el siguiente comando:
    ````
@@ -181,6 +262,17 @@
    ````
    Y si Guardamos y le dijimos a GIT "Esta listo para subir al Repositorio Remoto"
    Como te darás cuenta aún estamos en nuestro Repositorio Local.
+
+  
+# Como deshacer un cambio, que se encuentre en la Stage area
+1) Habiendo previamente realizado el comando:
+   ````
+   git add archivo.txt
+   ````
+   por lo tanto enviando el archivo a la Stage area, podemos traerlo hacia atras con el comando:
+   ````
+   git restore --staged archivo.txt
+   ````
 
 
 # Enviamos al Repositorio Remoto(GitHub)
@@ -225,7 +317,50 @@
    y asi poder seguir trabando en ella. 
 
  
+# Como Ver las Branch que tenemos en git
 
+1) Dentro de nuestra carpeta abrimos la GIT BASH.
+
+2) Con el siguiente comando podemos ver las ramas o la main:
+  ````
+   git branch
+   ````
+
+
+# Como Renombrar la Branch en git
+
+1) Utilizaremos el siguiente comando en la GIT BASH
+   ````
+   git branch -m [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   ````
+   Alternativa:
+   ````
+   git branch --move [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   ````
+
+
+ # Como Eliminar una Branch en git
+ 
+ 1) Antes de eliminar la rama, tienes que estar fuera de ella, sino git no te permitirá hacerlo. Recuerda que con git checkout
+ 
+ 2) Utilizaremos el siguiente comando:
+    ````
+    git branch -d [NOMBRE DE LA RAMA A ELIMINAR] 
+    ````
+    Alternativa:
+    ````
+    git branch --delete [NOMBRE DE LA RAMA A ELIMINAR] 
+    ````
+
+
+# Mas ayuda para las Branch en git
+
+1) Utilizaremos el siguiente comando:
+   ````
+    git help brach
+    ```` 
+  
+   
    
 
 
