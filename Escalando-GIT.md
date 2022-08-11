@@ -329,13 +329,18 @@ Opcional:
 
 # Como Renombrar la Branch en git
 
-1) Utilizaremos el siguiente comando en la GIT BASH
+1) Posicionados dentro de la rama que vamos a renombrar, utilizaremos el siguiente comando en la GIT BASH
    ````
-   git branch -m [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   git branch -m  [NOMBRE NUEVO PARA LA RAMA,sin corchetes]
    ````
-   Alternativa:
+2) Para cambiar el nombre de una rama REMOTA, que se encuentra en GitHub, tenemos que eliminar 
+   la rama que se encuentra en nuestro repo remoto. Desde nuestra GIT BASH colocamos el siguiente comando
    ````
-   git branch --move [NOMBRE DE LA RAMA VIEJA] [NOMBRE NUEVO PARA LA RAMA]
+   git push origin --delete nombre-anterior-de-la-rama
+   ````
+3) Ahora establecemos la nueva rama.
+   ````
+   git push origin -u nombre-nuevo-de-la-rama
    ````
 
 
