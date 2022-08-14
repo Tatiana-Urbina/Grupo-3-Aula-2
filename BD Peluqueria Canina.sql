@@ -23,7 +23,7 @@ CREATE TABLE Dueño(
   Perro int (20) not null,
   Descripcion varchar (30) not null,
   Monto int (10) not null,
-  CONSTRAINT FK_Perro FOREIGN KEY (Perro) REFERENCES Historial (ID_historial));
+  CONSTRAINT FK_Perro FOREIGN KEY (Perro) REFERENCES Perro (ID_Perro));
   --------------------------------------------------------------------------
 insert into Dueño(DNI,Nombre,Apellido,Telefono,Direccion)Values
 ('16485125','Marcelo', 'Gutierrez', '351745963', 'Av. colon 1117');
