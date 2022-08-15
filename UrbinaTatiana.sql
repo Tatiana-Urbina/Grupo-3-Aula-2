@@ -2,7 +2,7 @@ CREATE DATABASE VET;
 USE VET;
 
 CREATE TABLE Dueno(
-DNI int(10) unsigned not null auto_increment,
+DNI int(10) unsigned not null,
 Nombre varchar(20) not null,
 Apellido varchar(20) not null,
 Teléfono int(10) not null,
